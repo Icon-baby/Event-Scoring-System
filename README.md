@@ -1,6 +1,7 @@
 # Event Scoring System - LAMP Stack Implementation
 
 A comprehensive event scoring system built with the LAMP stack (Linux, Apache, MySQL, PHP) that provides three main interfaces: an admin panel for judge management, a judge portal for scoring participants, and a public scoreboard with real-time updates.
+⚡ Designed as part of the CTFroom technical challenge with extensibility and clarity in mind.
 
 ## Features
 
@@ -35,14 +36,29 @@ A comprehensive event scoring system built with the LAMP stack (Linux, Apache, M
 
 ## Installation & Setup
 
-### Prerequisites
-- LAMP stack installed (Linux, Apache, MySQL, PHP)
-- PHP extensions: PDO, pdo_mysql
-- MySQL/MariaDB database server
+Follow these steps to install and run the **Event Scoring System** judge scoring app locally on a LAMP stack using XAMPP, WAMP, or native Apache + MySQL.
 
-### Step 1: Clone/Download Files
+---
+
+## ✅ Requirements
+
+- PHP 7.x or higher
+- MySQL (5.x or 8.x)
+- Apache Web Server
+- [XAMPP](https://www.apachefriends.org/) for easy local dev
+- (Optional) [Ngrok](https://ngrok.com/) for public access
+
+---
+
+## 📂 Step 1: Clone or Move the Project
+
+Place the `LAMPWebBuilder` project folder into your Apache root directory.
+
+**For XAMPP on Windows:**
 ```bash
-# Place all files in your web root directory (e.g., /var/www/html/)
-# Ensure proper file permissions
-sudo chown -R www-data:www-data /var/www/html/
-sudo chmod -R 755 /var/www/html/
+C:\xampp\htdocs\LAMPWebBuilder\
+
+
+**For Linux Apache:**
+```bash
+/var/www/html/LAMPWebBuilder/ 
