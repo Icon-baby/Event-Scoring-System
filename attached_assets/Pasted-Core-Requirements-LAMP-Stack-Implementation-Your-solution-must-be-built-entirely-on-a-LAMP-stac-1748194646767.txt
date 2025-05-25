@@ -1,0 +1,35 @@
+Core Requirements:
+
+LAMP Stack Implementation: Your solution must be built entirely on a LAMP stack. Please demonstrate your understanding of how these components work together. You are free to use a local development environment (e.g., XAMPP, WAMP, Dockerized LAMP).
+Admin Panel for Judge Management:
+Create an administrator interface (login not required for this task, but consider how it might be secured in a real application).
+Admins should be able to add new "Judges" to the system. Each judge should have a unique identifier (e.g., username/ID) and display name.
+Judge Portal & Scoring:
+Create a separate interface for Judges (login not required for this task, but consider the implications).
+Judges should be able to view a list of all participating "Users" (event participants). For simplicity, you can assume these users are pre-registered or manually added for the purpose of this demo.
+Judges must be able to select an individual User and assign points to them. Points should be numerical (e.g., 1-100).
+Public Scoreboard Display:
+Create a public-facing scoreboard page.
+This scoreboard should display all Users and their total accumulated points.
+The scoreboard must be dynamically updated (e.g., auto-refreshing every few seconds/minutes, or demonstrate how it would update if new scores were added).
+The scoreboard should highlight all users based on their total points.
+The scoreboard should be sorted in descending order of total points.
+Deliverables:
+
+Source Code: A well-organized codebase (PHP, HTML, CSS, JavaScript, SQL for database schema/initial data).
+README.md File:
+Clear instructions on how to set up and run the application.
+Database schema (SQL CREATE TABLE statements).
+Any assumptions made.
+A brief explanation of your design choices (e.g., database structure, why you chose certain PHP constructs).
+(Optional but Recommended) A short list of features you would add if you had more time.
+Publicly accessible link to your project: Share a link to preview the core functionalities of your deliverables.
+Evaluation Criteria:
+
+LAMP Fundamentals: Correct usage and integration of Apache, MySQL, and PHP.
+Database Design: Logical and efficient database schema (tables, relationships).
+PHP Logic: Clean, readable, and functional PHP code.
+Frontend (HTML/CSS/JS): Basic usability and presentation. Responsiveness is a bonus, not a requirement.
+Problem Solving: How well the core requirements are met.
+Code Quality: Readability, comments, basic error handling (e.g., form validation).
+Adherence to Instructions: Following all specified requirements.

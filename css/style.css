@@ -1,0 +1,172 @@
+:root {
+    --primary-color: 220 95% 50%; /* #0d6efd */
+    --success-color: 142 76% 36%; /* #198754 */
+    --info-color: 188 78% 41%; /* #0dcaf0 */
+    --warning-color: 45 100% 51%; /* #ffc107 */
+    --danger-color: 354 70% 54%; /* #dc3545 */
+    --background: 210 11% 98%; /* #f8f9fa */
+    --text-dark: 220 9% 24%; /* #212529 */
+    --border-color: 210 14% 83%; /* #dee2e6 */
+}
+
+body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--text-dark));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.card {
+    border: 1px solid hsl(var(--border-color));
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.card-header {
+    background-color: hsl(var(--background));
+    border-bottom: 1px solid hsl(var(--border-color));
+    font-weight: 600;
+}
+
+/* Scoreboard specific styles */
+.scoreboard-table {
+    font-size: 1.1rem;
+}
+
+.scoreboard-table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.participant-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.rank-number {
+    font-size: 1.5rem;
+    color: hsl(var(--primary-color));
+}
+
+.rank-badge {
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
+
+.score-badge {
+    font-size: 1.1rem !important;
+    padding: 8px 12px;
+}
+
+/* Auto-refresh indicator */
+.auto-refresh-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Judge portal styles */
+.score-form {
+    align-items: center;
+    gap: 8px;
+}
+
+.score-form input[type="number"] {
+    min-width: 80px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .scoreboard-table {
+        font-size: 0.9rem;
+    }
+    
+    .participant-name {
+        font-size: 1rem;
+    }
+    
+    .rank-number {
+        font-size: 1.2rem;
+    }
+    
+    .score-badge {
+        font-size: 0.9rem !important;
+        padding: 6px 8px;
+    }
+}
+
+/* Loading and status indicators */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.refresh-indicator {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Form validation styles */
+.form-control:invalid {
+    border-color: hsl(var(--danger-color));
+}
+
+.form-control:valid {
+    border-color: hsl(var(--success-color));
+}
+
+/* Table hover effects */
+.table-hover tbody tr:hover {
+    background-color: hsl(var(--background));
+    transition: background-color 0.2s ease;
+}
+
+/* Button styles */
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.btn-sm {
+    font-size: 0.85rem;
+}
+
+/* Alert styles */
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+/* Custom scrollbar */
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: hsl(var(--border-color));
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--text-dark) / 0.3);
+}
